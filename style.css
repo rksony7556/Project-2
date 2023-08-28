@@ -23,3 +23,59 @@ body{
 .title_small{
     font-size: 20px;
 }
+.form_container{
+        margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+}
+.form_control{
+    display: flex;
+    flex-direction: column;
+}
+.lable{
+    font-size:  20px;
+    margin-bottom: 20px;
+}
+input ,select , textarea{
+    padding: 6px;
+    border: 2px solid rgb(201, 131, 131);
+    border-radius: 10px;
+    font-size: 20px;
+}
+/* input:focus{
+    outline: red;
+} */
+.button_container{
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+   }
+   button{
+    background-origin: blue;
+    border-radius: 10px;
+    border: solid 5px ;
+    padding: 5px 10px;
+    color: rgb(207, 128, 24);
+    transform: 0.5s ease-in;
+
+
+   }
+   button:hover{
+    background-color: rgb(187, 61, 23);
+    border: 5px solid rgb(42, 116, 42);
+    color: black;
+    transform: 0.5s ease-out;
+    cursor: pointer;
+   }
+   .textarea_control{
+    grid-column:1 / span 2 ;
+   }
+   .textarea_control textarea{
+    width: 100%;
+   }
+   @media (max-width: 460px){
+    .textarea_control{
+    grid-column: 1 / span 2 ;
+    }
+   }
